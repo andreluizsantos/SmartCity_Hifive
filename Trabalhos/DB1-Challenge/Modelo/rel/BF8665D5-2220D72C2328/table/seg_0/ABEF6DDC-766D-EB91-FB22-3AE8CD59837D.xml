@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABEF6DDC-766D-EB91-FB22-3AE8CD59837D" name="TBL_PRECO_PRODUTO">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:38:28 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PRECO_PRODUTO" id="C62A337F-0292-E096-3C27-647017DD728F">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:44:02 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRODUTO" id="A91AD5B8-ABFF-4FD5-9683-97CD3B7F2078">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:44:02 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC82404D-66EB-E8D5-A94F-68E8EEFCA948" referredColumn="2AB83482-8748-5718-A114-084D834FECF6"/>
+</associations>
+</Column>
+<Column name="ID_GRADUACAO" id="ADDE44A7-3A1A-BA48-5293-CB2EAFBEFE1B">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:08:13 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC82404D-66EB-E8D5-A94F-68E8EEFCA948" referredColumn="EC97A542-F0F4-356B-BCA6-AE638BF52764"/>
+</associations>
+</Column>
+<Column name="VL_QUANTIDADE" id="3E89D33B-065E-D1A6-E68F-892D3210353B">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:44:02 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,8,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_PRODUTO" id="1929FFE0-8AFB-599A-F22A-900820901DC7">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:44:02 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBA80541-03E9-B506-DE1B-8261597AA647" name="TBL_PRECO_PRODUTO_PK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:44:02 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C62A337F-0292-E096-3C27-647017DD728F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEAFECAE-77DD-B4C1-97B9-ADEA0C7E618C" name="TBL_PRECO_PRODUTO_TBL_GRADUACAO_PRODUTO_FK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:08:24 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADDE44A7-3A1A-BA48-5293-CB2EAFBEFE1B"/>
+<colUsage columnID="A91AD5B8-ABFF-4FD5-9683-97CD3B7F2078"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

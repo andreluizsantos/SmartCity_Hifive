@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EC402BE-263B-8D93-0F2B-568D7FDEF64E" name="TBL_TIPO_PRODUTO">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:50:32 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO" id="D86A70A0-4CC8-8F39-86FC-833A157AF195">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:51:16 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_TIPO_PRODUTO" id="5149248C-9021-3433-EA56-2E05B6DBD656">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:51:16 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD7CA90D-83F1-763A-FE9E-641B9EE38C63" name="TBL_TIPO_PRODUTO_PK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:51:16 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D86A70A0-4CC8-8F39-86FC-833A157AF195"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

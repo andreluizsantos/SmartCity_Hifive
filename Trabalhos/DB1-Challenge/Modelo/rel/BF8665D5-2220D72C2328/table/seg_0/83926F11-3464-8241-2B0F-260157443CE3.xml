@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83926F11-3464-8241-2B0F-260157443CE3" name="TBL_LOG_PRODUTO">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 13:52:56 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LOG" id="4271E6E7-D960-688B-A7A6-9B09D4FF1DA6">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_ACAO" id="B644D01E-712B-E33B-A685-9F09F841C9B9">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<constraintName>NM_ACAO_VALORES</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="DELETE" description=""/>
+<valueDef value="INSERT" description=""/>
+<valueDef value="UPDATE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRODUTO" id="DEF051A5-3BEE-A672-05A7-9F1A613A0061">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CATEGORIA_PRODUTO" id="B26A39AF-322B-A2CA-FA55-AA9A811EB314">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_PRODUTO" id="3EFFF016-9E4C-4668-44C4-74617795A6BF">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PRODUTO" id="9C40593D-6D45-F75D-092A-F98F04D1574F">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_PRODUTO" id="CF64AF49-7CEB-281D-1F50-BD824D7D28E4">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>800 CHAR</dataTypeSize>
+<ownDataTypeParameters>800 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_USUARIO" id="7EEB91A5-FCB6-1CA2-5AAF-BF088637E1E0">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:21:57 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_LOG" id="FBD32603-B8CC-CCAC-8E22-EFF08544CCEB">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:21:57 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A7ECE56-6B4D-650C-BAA6-CDCC62398B04" name="TBL_LOG_ALTERACAO_PK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-04 14:04:52 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4271E6E7-D960-688B-A7A6-9B09D4FF1DA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
