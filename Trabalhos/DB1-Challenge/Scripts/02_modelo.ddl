@@ -1,5 +1,5 @@
 -- Gerado por Oracle SQL Developer Data Modeler 21.4.2.059.0838
---   em:        2022-06-08 18:14:28 BRT
+--   em:        2022-06-08 20:22:58 BRT
 --   site:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
@@ -43,14 +43,15 @@ ALTER TABLE tbl_log_graduacao_produto
 ALTER TABLE tbl_log_graduacao_produto ADD CONSTRAINT tbl_log_graduacao_produto_pk PRIMARY KEY ( id_log );
 
 CREATE TABLE tbl_log_preco_produto (
-    id_log        INTEGER NOT NULL,
-    nm_acao       NVARCHAR2(6) NOT NULL,
-    id_produto    INTEGER NOT NULL,
-    id_graduacao  INTEGER NOT NULL,
-    vl_quantidade NUMBER(8, 3) NOT NULL,
-    vl_produto    NUMBER(10, 2) NOT NULL,
-    nm_usuario    NVARCHAR2(80) NOT NULL,
-    dt_log        TIMESTAMP NOT NULL
+    id_log           INTEGER NOT NULL,
+    nm_acao          NVARCHAR2(6) NOT NULL,
+    id_preco_produto INTEGER NOT NULL,
+    id_produto       INTEGER NOT NULL,
+    id_graduacao     INTEGER NOT NULL,
+    vl_quantidade    NUMBER(8, 3) NOT NULL,
+    vl_produto       NUMBER(10, 2) NOT NULL,
+    nm_usuario       NVARCHAR2(80) NOT NULL,
+    dt_log           TIMESTAMP NOT NULL
 );
 
 --  ERROR: Column TBL_LOG_PRECO_PRODUTO.NM_ACAO check constraint name length exceeds maximum allowed length(30) 
@@ -66,6 +67,7 @@ CREATE TABLE tbl_log_produto (
     id_produto           INTEGER NOT NULL,
     id_categoria_produto INTEGER NOT NULL,
     id_tipo_produto      INTEGER NOT NULL,
+    id_graduacao_produto INTEGER NOT NULL,
     nm_produto           VARCHAR2(250 CHAR) NOT NULL,
     ds_produto           NVARCHAR2(800),
     nm_usuario           NVARCHAR2(80) NOT NULL,

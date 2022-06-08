@@ -567,6 +567,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
     PROCEDURE sp_sel_tbl_log_preco_produto 
                                 (p_cursor out T_CURSOR,
                                 v_nm_acao in NVARCHAR2,
+                                v_id_preco_produto in INTEGER,
                                 v_id_produto in INTEGER,
                                 v_id_graduacao in INTEGER,
                                 v_vl_quantidade in NUMBER,
@@ -579,6 +580,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
         OPEN p_cursor for SELECT	
             id_log ,
             nm_acao ,
+            id_preco_produto,
             id_produto ,
             id_graduacao ,
             vl_quantidade ,
@@ -589,6 +591,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
             tbl_log_preco_produto	
         WHERE	
             (v_nm_acao  IS NULL OR nm_acao  = v_nm_acao ) AND
+            (v_id_preco_produto IS NULL or id_preco_produto = v_id_preco_produto ) AND
             (v_id_produto  IS NULL OR id_produto  = v_id_produto ) AND
             (v_id_graduacao  IS NULL OR id_graduacao  = v_id_graduacao ) AND
             (v_vl_quantidade  IS NULL OR vl_quantidade  = v_vl_quantidade ) AND
@@ -607,6 +610,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
                                 v_id_produto in INTEGER,
                                 v_id_categoria_produto in INTEGER,
                                 v_id_tipo_produto in INTEGER,
+                                v_id_graduacao_produto in INTEGER,
                                 v_nm_produto in VARCHAR2,
                                 v_ds_produto in NVARCHAR2,
                                 v_nm_usuario in NVARCHAR2,
@@ -631,6 +635,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
             (v_id_produto  IS NULL OR id_produto  = v_id_produto ) AND
             (v_id_categoria_produto  IS NULL OR id_categoria_produto  = v_id_categoria_produto ) AND
             (v_id_tipo_produto  IS NULL OR id_tipo_produto  = v_id_tipo_produto ) AND
+            (v_id_graduacao_produto IS NULL OR id_graduacao_produto = v_id_graduacao_produto) AND
             (v_nm_produto  IS NULL OR nm_produto  = v_nm_produto ) AND
             (v_ds_produto  IS NULL OR ds_produto  = v_ds_produto ) AND
             (v_nm_usuario  IS NULL OR nm_usuario  = v_nm_usuario ) AND

@@ -156,6 +156,7 @@ create or replace PACKAGE PKG_HIGHFIVE IS
     PROCEDURE sp_sel_tbl_log_preco_produto 
                                 (p_cursor out T_CURSOR,
                                 v_nm_acao in NVARCHAR2,
+                                v_id_preco_produto in INTEGER,
                                 v_id_produto in INTEGER,
                                 v_id_graduacao in INTEGER,
                                 v_vl_quantidade in NUMBER,
@@ -169,6 +170,7 @@ create or replace PACKAGE PKG_HIGHFIVE IS
                                 v_id_produto in INTEGER,
                                 v_id_categoria_produto in INTEGER,
                                 v_id_tipo_produto in INTEGER,
+                                v_id_graduacao_produto in INTEGER,
                                 v_nm_produto in VARCHAR2,
                                 v_ds_produto in NVARCHAR2,
                                 v_nm_usuario in NVARCHAR2,
