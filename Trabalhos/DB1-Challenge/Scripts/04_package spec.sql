@@ -28,12 +28,6 @@ create or replace PACKAGE PKG_HIGHFIVE IS
                         v_nm_usuario_ultima_alteracao in NVARCHAR2,
                         v_dt_ultima_alteracao in TIMESTAMP);	
     
-    PROCEDURE sp_upd_tbl_graduacao_produto 
-                        (v_id_graduacao in INTEGER,
-                        v_id_produto in INTEGER,
-                        v_nm_usuario_ultima_alteracao in NVARCHAR2,
-                        v_dt_ultima_alteracao in TIMESTAMP);	
-    
     PROCEDURE sp_del_tbl_graduacao_produto 
                         (v_id_graduacao in INTEGER,
                         v_id_produto in INTEGER);	
@@ -70,6 +64,7 @@ create or replace PACKAGE PKG_HIGHFIVE IS
     
     PROCEDURE sp_sel_tbl_preco_produto 
                             (p_cursor out T_CURSOR,
+                            v_id_preco_produto in INTEGER,
                             v_id_produto in INTEGER,
                             v_id_graduacao in INTEGER,
                             v_vl_quantidade in NUMBER,
@@ -113,7 +108,7 @@ create or replace PACKAGE PKG_HIGHFIVE IS
                             v_dt_ultima_alteracao in TIMESTAMP);
 
 
-    /* tabela */
+    /* tabela bl_tipo_produto */
     PROCEDURE sp_ins_tbl_tipo_produto 
                             (v_nm_tipo_produto in NVARCHAR2);
                             
@@ -130,19 +125,19 @@ create or replace PACKAGE PKG_HIGHFIVE IS
                             v_nm_tipo_produto in NVARCHAR2);
                             
 
-    /* tbl_produto_graducao */
+    /* tabela tbl_produto_graducao */
     
-    PROCEDURE sp_ins_tbl_produto_graducao 
+    PROCEDURE sp_ins_tbl_produto_graduacao 
                                 (v_nm_graduacao in NVARCHAR2);	
     
-    PROCEDURE sp_upd_tbl_produto_graducao 
+    PROCEDURE sp_upd_tbl_produto_graduacao 
                                 (v_id_graduacao in INTEGER,
                                 v_nm_graduacao in NVARCHAR2);	
                                 
-    PROCEDURE sp_del_tbl_produto_graducao 
+    PROCEDURE sp_del_tbl_produto_graduacao 
                                 (v_id_graduacao IN INTEGER);
                                 
-    PROCEDURE sp_sel_tbl_produto_graducao 
+    PROCEDURE sp_sel_tbl_produto_graduacao 
                                 (p_cursor out T_CURSOR,
                                 v_id_graduacao in INTEGER,
                                 v_nm_graduacao in NVARCHAR2);
