@@ -77,6 +77,28 @@
 <ownDataTypeParameters>800 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NM_USUARIO_ULTIMA_ALTERACAO" id="B7A93615-7E50-0138-6399-35ACFE0EFDC8">
+<createdBy>lpess</createdBy>
+<createdTime>2022-06-08 13:34:58 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ULTIMA_ALTERACAO" id="FAE4F80D-D66A-BE48-BA72-E8CC0D44E637">
+<createdBy>lpess</createdBy>
+<createdTime>2022-06-08 13:34:58 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="4C261468-3C25-C84B-F9B9-5E9251C10D51" name="TBL_PRODUTO_PK">

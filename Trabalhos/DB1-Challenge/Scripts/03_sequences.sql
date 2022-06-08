@@ -1,0 +1,42 @@
+
+CREATE SEQUENCE tbl_categoria_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
+CREATE SEQUENCE tbl_log_graduacao_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
+CREATE SEQUENCE tbl_log_preco_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+
+CREATE SEQUENCE tbl_log_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
+CREATE SEQUENCE tbl_preco_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
+CREATE SEQUENCE tbl_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
+ CREATE SEQUENCE tbl_tipo_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;

@@ -68,6 +68,28 @@
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NM_USUARIO_ULTIMA_ALTERACAO" id="B917F1FB-DE20-91FB-E31D-4EDD9F69940A">
+<createdBy>lpess</createdBy>
+<createdTime>2022-06-08 13:37:08 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ULTIMA_ALTERACAO" id="3600B842-3311-4F74-5FAF-2BEDF53BB8DE">
+<createdBy>lpess</createdBy>
+<createdTime>2022-06-08 13:37:08 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="CBA80541-03E9-B506-DE1B-8261597AA647" name="TBL_PRECO_PRODUTO_PK">
@@ -79,6 +101,18 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C62A337F-0292-E096-3C27-647017DD728F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0ACFEE89-0B81-34CF-EF8E-5FD8EA8D8F19" name="TBL_PRECO_PRODUTO__UN">
+<createdBy>lpess</createdBy>
+<createdTime>2022-06-07 22:35:04 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A91AD5B8-ABFF-4FD5-9683-97CD3B7F2078"/>
+<colUsage columnID="ADDE44A7-3A1A-BA48-5293-CB2EAFBEFE1B"/>
+<colUsage columnID="3E89D33B-065E-D1A6-E68F-892D3210353B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="EEAFECAE-77DD-B4C1-97B9-ADEA0C7E618C" name="TBL_PRECO_PRODUTO_TBL_GRADUACAO_PRODUTO_FK">

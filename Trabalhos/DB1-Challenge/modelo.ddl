@@ -1,5 +1,5 @@
--- Gerado por Oracle SQL Developer Data Modeler 21.2.0.183.1957
---   em:        2022-06-04 11:59:55 BRT
+-- Gerado por Oracle SQL Developer Data Modeler 21.4.2.059.0838
+--   em:        2022-06-08 10:44:19 BRT
 --   site:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
@@ -16,14 +16,21 @@ CREATE TABLE tbl_categoria_produto (
 
 ALTER TABLE tbl_categoria_produto ADD CONSTRAINT tbl_categoria_produto_pk PRIMARY KEY ( id_categoria );
 
+CREATE SEQUENCE tbl_categoria_produto_seq
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
 CREATE TABLE tbl_graduacao_produto (
-    id_graduacao INTEGER NOT NULL,
-    id_produto   INTEGER NOT NULL
+    id_graduacao                INTEGER NOT NULL,
+    id_produto                  INTEGER NOT NULL,
+    nm_usuario_ultima_alteracao NVARCHAR2(80) NOT NULL,
+    dt_ultima_alteracao         TIMESTAMP NOT NULL
 );
 
 ALTER TABLE tbl_graduacao_produto ADD CONSTRAINT tbl_graduacao_produto_pk PRIMARY KEY ( id_graduacao,
-                                                                                        id_produto );
-
+                                                                                        id_produto ); 
 CREATE TABLE tbl_log_graduacao_produto (
     id_log       INTEGER NOT NULL,
     nm_acao      NVARCHAR2(6) NOT NULL,
@@ -33,8 +40,10 @@ CREATE TABLE tbl_log_graduacao_produto (
     dt_log       TIMESTAMP NOT NULL
 );
 
+--  ERROR: Column TBL_LOG_GRADUACAO_PRODUTO.NM_ACAO check constraint name length exceeds maximum allowed length(30) 
+
 ALTER TABLE tbl_log_graduacao_produto
-    ADD CONSTRAINT nm_acao_valores CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
+    ADD CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
 
 ALTER TABLE tbl_log_graduacao_produto ADD CONSTRAINT tbl_log_graduacao_produto_pk PRIMARY KEY ( id_log );
 
@@ -49,8 +58,10 @@ CREATE TABLE tbl_log_preco_produto (
     dt_log        TIMESTAMP NOT NULL
 );
 
+--  ERROR: Column TBL_LOG_PRECO_PRODUTO.NM_ACAO check constraint name length exceeds maximum allowed length(30) 
+
 ALTER TABLE tbl_log_preco_produto
-    ADD CONSTRAINT nm_acao_valores CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
+    ADD CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
 
 ALTER TABLE tbl_log_preco_produto ADD CONSTRAINT tbl_log_preco_produto_pk PRIMARY KEY ( id_log );
 
@@ -66,28 +77,39 @@ CREATE TABLE tbl_log_produto (
     dt_log               TIMESTAMP NOT NULL
 );
 
+--  ERROR: Column TBL_LOG_PRODUTO.NM_ACAO check constraint name length exceeds maximum allowed length(30) 
+
 ALTER TABLE tbl_log_produto
-    ADD CONSTRAINT nm_acao_valores CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
+    ADD CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
 
 ALTER TABLE tbl_log_produto ADD CONSTRAINT tbl_log_alteracao_pk PRIMARY KEY ( id_log );
 
 CREATE TABLE tbl_preco_produto (
-    id_preco_produto INTEGER NOT NULL,
-    id_produto       INTEGER NOT NULL,
-    id_graduacao     INTEGER NOT NULL,
-    vl_quantidade    NUMBER(8, 3) NOT NULL,
-    vl_produto       NUMBER(10, 2) NOT NULL
+    id_preco_produto            INTEGER NOT NULL,
+    id_produto                  INTEGER NOT NULL,
+    id_graduacao                INTEGER NOT NULL,
+    vl_quantidade               NUMBER(8, 3) NOT NULL,
+    vl_produto                  NUMBER(10, 2) NOT NULL,
+    nm_usuario_ultima_alteracao NVARCHAR2(80) NOT NULL,
+    dt_ultima_alteracao         TIMESTAMP NOT NULL
 );
 
 ALTER TABLE tbl_preco_produto ADD CONSTRAINT tbl_preco_produto_pk PRIMARY KEY ( id_preco_produto );
 
+ALTER TABLE tbl_preco_produto
+    ADD CONSTRAINT tbl_preco_produto__un UNIQUE ( id_produto,
+                                                  id_graduacao,
+                                                  vl_quantidade );
+
 CREATE TABLE tbl_produto (
-    id_produto           INTEGER NOT NULL,
-    id_categoria_produto INTEGER NOT NULL,
-    id_tipo_produto      INTEGER NOT NULL,
-    id_graduacao_produto INTEGER NOT NULL,
-    nm_produto           VARCHAR2(250 CHAR) NOT NULL,
-    ds_produto           VARCHAR2(800 CHAR)
+    id_produto                  INTEGER NOT NULL,
+    id_categoria_produto        INTEGER NOT NULL,
+    id_tipo_produto             INTEGER NOT NULL,
+    id_graduacao_produto        INTEGER NOT NULL,
+    nm_produto                  VARCHAR2(250 CHAR) NOT NULL,
+    ds_produto                  VARCHAR2(800 CHAR),
+    nm_usuario_ultima_alteracao NVARCHAR2(80) NOT NULL,
+    dt_ultima_alteracao         TIMESTAMP NOT NULL
 );
 
 ALTER TABLE tbl_produto ADD CONSTRAINT tbl_produto_pk PRIMARY KEY ( id_produto );
@@ -139,7 +161,7 @@ ALTER TABLE tbl_produto
 -- 
 -- CREATE TABLE                             9
 -- CREATE INDEX                             0
--- ALTER TABLE                             17
+-- ALTER TABLE                             18
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
@@ -175,5 +197,5 @@ ALTER TABLE tbl_produto
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   5
+-- ERRORS                                   8
 -- WARNINGS                                 0

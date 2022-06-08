@@ -34,6 +34,28 @@
 <colAssociation fkAssociation="5840788F-819B-3CE4-781A-BD4B427A8AC1" referredColumn="4C4D1220-7A30-F251-A90D-8B6F692DD529"/>
 </associations>
 </Column>
+<Column name="NM_USUARIO_ULTIMA_ALTERACAO" id="AD23DF7B-B0CD-DAAB-C7DD-BECA12F53056">
+<createdBy>lpess</createdBy>
+<createdTime>2022-06-07 22:29:22 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ULTIMA_ALTERACAO" id="700053B4-60E2-ED92-3A59-42FB23168A69">
+<createdBy>lpess</createdBy>
+<createdTime>2022-06-07 22:29:22 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="7E7EC702-5A76-CEBD-687E-0A524D7275CF" name="TBL_GRADUACAO_PRODUTO_PK">
