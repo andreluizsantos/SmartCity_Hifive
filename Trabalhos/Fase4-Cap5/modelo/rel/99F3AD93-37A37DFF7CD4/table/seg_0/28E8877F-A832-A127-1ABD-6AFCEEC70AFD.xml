@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28E8877F-A832-A127-1ABD-6AFCEEC70AFD" name="FATO_VENDA_OFERTAS">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:02:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_USUARIO_COMPRADOR" id="5AAC524A-6E87-51E5-EBFF-EF94788DEE15">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:04:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SK_USUARIO_VENDEDOR" id="BED309D1-8411-3B61-5A58-EBB0517ED489">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:04:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SK_DATA" id="6F6CDA6F-E808-3117-F5DB-8ACA7B00A8B9">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:06:16 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SK_OFERTA" id="89D5A20E-0325-8EFB-C567-530408AD2D77">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:07:25 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DD_CATEGORIA" id="C9489120-1481-F366-0782-70FD062C1C53">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:09:06 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_CUSTO_PONTOS" id="E168C856-FAF2-97BD-B89D-4000E3640EAB">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:10:05 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_DESCONTO_PONTOS" id="E2364F13-5A81-896D-7301-60C1F40B1C59">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:10:05 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A0F0184-278B-7E6B-1663-68A09BF8E903" name="FATO_VENDA_OFERTAS_PK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:04:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AAC524A-6E87-51E5-EBFF-EF94788DEE15"/>
+<colUsage columnID="BED309D1-8411-3B61-5A58-EBB0517ED489"/>
+<colUsage columnID="6F6CDA6F-E808-3117-F5DB-8ACA7B00A8B9"/>
+<colUsage columnID="89D5A20E-0325-8EFB-C567-530408AD2D77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
