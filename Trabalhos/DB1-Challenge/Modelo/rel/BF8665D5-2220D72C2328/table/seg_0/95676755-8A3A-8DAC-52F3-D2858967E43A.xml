@@ -70,7 +70,7 @@
 <colUsage columnID="2AB83482-8748-5718-A114-084D834FECF6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3C880E65-65E7-5915-380F-E2B80561F3AF" name="TBL_GRADUACAO_PRODUTO_TBL_PRODUTO_FK">
+<ind_PK_UK id="3C880E65-65E7-5915-380F-E2B80561F3AF" name="TBL_PRODUTO_FK">
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 14:07:14 UTC</createdTime>
 <ownerDesignName>Modelo</ownerDesignName>
@@ -80,7 +80,7 @@
 <colUsage columnID="2AB83482-8748-5718-A114-084D834FECF6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4E0DD382-416B-02C5-A87C-0BB5BA30DFB6" name="TBL_GRADUACAO_PRODUTO_TBL_PRODUTO_GRADUACAO_FK">
+<ind_PK_UK id="4E0DD382-416B-02C5-A87C-0BB5BA30DFB6" name="TBL_PRODUTO_GRADUACAO_FK">
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 14:07:28 UTC</createdTime>
 <ownerDesignName>Modelo</ownerDesignName>

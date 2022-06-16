@@ -1,14 +1,14 @@
-CREATE TABLESPACE highfive_challenge
-LOGGING DATAFILE 'C:\app\lpess\product\21c\oradata\XE\highfive_challenge.dbf'
+CREATE TABLESPACE highfive_db1challenge
+LOGGING DATAFILE 'D:\oracle\database\highfive_db1challenge.dbf'
 SIZE 100m AUTOEXTEND ON NEXT 100m EXTENT MANAGEMENT LOCAL;
 
 
 
 alter session set "_ORACLE_SCRIPT"=true;
-CREATE USER highfive_user
+CREATE USER db1user
 IDENTIFIED BY abcd1234
-DEFAULT TABLESPACE highfive_challenge
-QUOTA UNLIMITED ON highfive_challenge;
+DEFAULT TABLESPACE highfive_db1challenge
+QUOTA UNLIMITED ON highfive_db1challenge;
 
 
 
@@ -25,4 +25,4 @@ create any directory,
 create type,
 create synonym
 TO
-highfive_user;
+db1user;

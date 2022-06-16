@@ -22,7 +22,7 @@
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 14:20:49 UTC</createdTime>
 <ownerDesignName>Modelo</ownerDesignName>
-<constraintName>TB_LOG_GRADUACAO_PRODUTO_NM_ACAO_VALORES</constraintName>
+<constraintName>TB_LOG_GR_PRD_NM_ACAO</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>

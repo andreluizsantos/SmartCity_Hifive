@@ -77,8 +77,7 @@ create or replace PACKAGE PKG_HIGHFIVE IS
     
     PROCEDURE sp_ins_tbl_produto 
                             (v_id_categoria_produto in INTEGER,
-                            v_id_tipo_produto in INTEGER,
-                            v_id_graduacao_produto in INTEGER,
+                            v_id_tipo_produto in INTEGER,                           
                             v_nm_produto in VARCHAR2,
                             v_ds_produto in VARCHAR2,
                             v_nm_usuario_ultima_alteracao in NVARCHAR2,
@@ -87,8 +86,7 @@ create or replace PACKAGE PKG_HIGHFIVE IS
     PROCEDURE sp_upd_tbl_produto 
                             (v_id_produto in INTEGER,
                             v_id_categoria_produto in INTEGER,
-                            v_id_tipo_produto in INTEGER,
-                            v_id_graduacao_produto in INTEGER,
+                            v_id_tipo_produto in INTEGER,                           
                             v_nm_produto in VARCHAR2,
                             v_ds_produto in VARCHAR2,
                             v_nm_usuario_ultima_alteracao in NVARCHAR2,
@@ -100,8 +98,7 @@ create or replace PACKAGE PKG_HIGHFIVE IS
     PROCEDURE sp_sel_tbl_produto (p_cursor out T_CURSOR,
                             v_id_produto in INTEGER,
                             v_id_categoria_produto in INTEGER,
-                            v_id_tipo_produto in INTEGER,
-                            v_id_graduacao_produto in INTEGER,
+                            v_id_tipo_produto in INTEGER,                            
                             v_nm_produto in VARCHAR2,
                             v_ds_produto in VARCHAR2,
                             v_nm_usuario_ultima_alteracao in NVARCHAR2,

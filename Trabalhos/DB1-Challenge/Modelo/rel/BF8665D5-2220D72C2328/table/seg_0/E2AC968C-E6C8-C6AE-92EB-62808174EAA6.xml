@@ -44,16 +44,6 @@
 <colAssociation fkAssociation="70F03052-1A7E-14DF-2169-1A6ED66F3421" referredColumn="D86A70A0-4CC8-8F39-86FC-833A157AF195"/>
 </associations>
 </Column>
-<Column name="ID_GRADUACAO_PRODUTO" id="09AE384E-37AA-6748-418B-D8B80300D4ED">
-<createdBy>andre</createdBy>
-<createdTime>2022-06-04 13:38:01 UTC</createdTime>
-<ownerDesignName>Modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="NM_PRODUTO" id="372092DB-787E-2655-A099-7E827811A1EF">
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 13:38:01 UTC</createdTime>
@@ -112,7 +102,7 @@
 <colUsage columnID="4C4D1220-7A30-F251-A90D-8B6F692DD529"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="24F28DCB-DFB7-9EC2-CBC8-4824F0D5D0AB" name="TBL_PRODUTO_TBL_CATEGORIA_PRODUTO_FK">
+<ind_PK_UK id="24F28DCB-DFB7-9EC2-CBC8-4824F0D5D0AB" name="TBL_CATEGORIA_PRODUTO_FK">
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 13:49:55 UTC</createdTime>
 <ownerDesignName>Modelo</ownerDesignName>
@@ -122,7 +112,7 @@
 <colUsage columnID="4775BD25-5B04-59DD-A2A0-A41AB230AAD8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DB86182C-197A-5691-2E01-7F840350475A" name="TBL_PRODUTO_TBL_TIPO_PRODUTO_FK">
+<ind_PK_UK id="DB86182C-197A-5691-2E01-7F840350475A" name="TBL_TIPO_PRODUTO_FK">
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 13:51:53 UTC</createdTime>
 <ownerDesignName>Modelo</ownerDesignName>

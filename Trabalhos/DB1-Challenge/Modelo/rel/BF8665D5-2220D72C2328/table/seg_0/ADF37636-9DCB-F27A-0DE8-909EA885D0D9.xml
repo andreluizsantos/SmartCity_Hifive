@@ -22,7 +22,7 @@
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 14:23:35 UTC</createdTime>
 <ownerDesignName>Modelo</ownerDesignName>
-<constraintName>NM_ACAO_VALORES</constraintName>
+<constraintName>TB_LOG_PRC_PRD_NM_ACAO</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -33,6 +33,17 @@
 <valueDef value="UPDATE" description=""/>
 </listOfValues>
 <ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRECO_PRODUTO" id="F2986FEB-4CD6-264A-C87D-B22C37CA4BD1">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-09 18:41:49 UTC</createdTime>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_PRODUTO" id="4057AB63-5369-C5BB-8D1B-AFFE6E284AAE">

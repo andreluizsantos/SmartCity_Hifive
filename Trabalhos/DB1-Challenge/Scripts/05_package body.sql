@@ -262,8 +262,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
     --ok
     PROCEDURE sp_ins_tbl_produto 
                             (v_id_categoria_produto in INTEGER,
-                            v_id_tipo_produto in INTEGER,
-                            v_id_graduacao_produto in INTEGER,
+                            v_id_tipo_produto in INTEGER,                          
                             v_nm_produto in VARCHAR2,
                             v_ds_produto in VARCHAR2,
                             v_nm_usuario_ultima_alteracao in NVARCHAR2,
@@ -275,8 +274,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
         (
             id_produto,
             id_categoria_produto,
-            id_tipo_produto,
-            id_graduacao_produto,
+            id_tipo_produto,           
             nm_produto,
             ds_produto,
             nm_usuario_ultima_alteracao,
@@ -286,8 +284,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
         (
             tbl_produto_seq.NEXTVAL,
             v_id_categoria_produto,
-            v_id_tipo_produto,
-            v_id_graduacao_produto,
+            v_id_tipo_produto,           
             v_nm_produto,
             v_ds_produto,
             v_nm_usuario_ultima_alteracao,
@@ -302,8 +299,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
     PROCEDURE sp_upd_tbl_produto 
                             (v_id_produto in INTEGER,
                             v_id_categoria_produto in INTEGER,
-                            v_id_tipo_produto in INTEGER,
-                            v_id_graduacao_produto in INTEGER,
+                            v_id_tipo_produto in INTEGER,                          
                             v_nm_produto in VARCHAR2,
                             v_ds_produto in VARCHAR2,
                             v_nm_usuario_ultima_alteracao in NVARCHAR2,
@@ -314,8 +310,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
         UPDATE tbl_produto
         SET
             id_categoria_produto  = v_id_categoria_produto ,
-            id_tipo_produto  = v_id_tipo_produto ,
-            id_graduacao_produto  = v_id_graduacao_produto ,
+            id_tipo_produto  = v_id_tipo_produto ,           
             nm_produto  = v_nm_produto ,
             ds_produto  = v_ds_produto ,
             nm_usuario_ultima_alteracao  = v_nm_usuario_ultima_alteracao ,
@@ -344,8 +339,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
     PROCEDURE sp_sel_tbl_produto (p_cursor out T_CURSOR,
                             v_id_produto in INTEGER,
                             v_id_categoria_produto in INTEGER,
-                            v_id_tipo_produto in INTEGER,
-                            v_id_graduacao_produto in INTEGER,
+                            v_id_tipo_produto in INTEGER,                           
                             v_nm_produto in VARCHAR2,
                             v_ds_produto in VARCHAR2,
                             v_nm_usuario_ultima_alteracao in NVARCHAR2,
@@ -356,8 +350,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
         OPEN p_cursor for SELECT	
             id_produto ,
             id_categoria_produto ,
-            id_tipo_produto ,
-            id_graduacao_produto ,
+            id_tipo_produto ,          
             nm_produto ,
             ds_produto ,
             nm_usuario_ultima_alteracao ,
@@ -367,8 +360,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
         WHERE	
             (v_id_produto  IS NULL OR id_produto  = v_id_produto ) AND
             (v_id_categoria_produto  IS NULL OR id_categoria_produto  = v_id_categoria_produto ) AND
-            (v_id_tipo_produto  IS NULL OR id_tipo_produto  = v_id_tipo_produto ) AND
-            (v_id_graduacao_produto  IS NULL OR id_graduacao_produto  = v_id_graduacao_produto ) AND
+            (v_id_tipo_produto  IS NULL OR id_tipo_produto  = v_id_tipo_produto ) AND            
             (v_nm_produto  IS NULL OR nm_produto  = v_nm_produto ) AND
             (v_ds_produto  IS NULL OR ds_produto  = v_ds_produto ) AND
             (v_nm_usuario_ultima_alteracao  IS NULL OR nm_usuario_ultima_alteracao  = v_nm_usuario_ultima_alteracao ) AND
@@ -634,8 +626,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_HIGHFIVE IS
             (v_nm_acao  IS NULL OR nm_acao  = v_nm_acao ) AND
             (v_id_produto  IS NULL OR id_produto  = v_id_produto ) AND
             (v_id_categoria_produto  IS NULL OR id_categoria_produto  = v_id_categoria_produto ) AND
-            (v_id_tipo_produto  IS NULL OR id_tipo_produto  = v_id_tipo_produto ) AND
-            (v_id_graduacao_produto IS NULL OR id_graduacao_produto = v_id_graduacao_produto) AND
+            (v_id_tipo_produto  IS NULL OR id_tipo_produto  = v_id_tipo_produto ) AND            
             (v_nm_produto  IS NULL OR nm_produto  = v_nm_produto ) AND
             (v_ds_produto  IS NULL OR ds_produto  = v_ds_produto ) AND
             (v_nm_usuario  IS NULL OR nm_usuario  = v_nm_usuario ) AND

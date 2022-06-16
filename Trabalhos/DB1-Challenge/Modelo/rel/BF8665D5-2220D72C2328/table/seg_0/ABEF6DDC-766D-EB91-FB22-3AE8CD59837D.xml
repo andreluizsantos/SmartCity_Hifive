@@ -115,7 +115,7 @@
 <colUsage columnID="3E89D33B-065E-D1A6-E68F-892D3210353B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EEAFECAE-77DD-B4C1-97B9-ADEA0C7E618C" name="TBL_PRECO_PRODUTO_TBL_GRADUACAO_PRODUTO_FK">
+<ind_PK_UK id="EEAFECAE-77DD-B4C1-97B9-ADEA0C7E618C" name="TBL_GRADUACAO_PRODUTO_FK">
 <createdBy>andre</createdBy>
 <createdTime>2022-06-04 14:08:24 UTC</createdTime>
 <ownerDesignName>Modelo</ownerDesignName>

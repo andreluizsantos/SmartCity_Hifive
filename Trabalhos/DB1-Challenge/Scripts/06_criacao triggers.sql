@@ -108,14 +108,13 @@ CREATE OR REPLACE TRIGGER tbl_produto_trg
   BEGIN
     
     IF DELETING THEN
-        INSERT INTO tbl_log_produto (id_log, nm_acao, id_produto, id_categoria_produto, id_tipo_produto, id_graduacao_produto, nm_produto, ds_produto, nm_usuario, dt_log)
+        INSERT INTO tbl_log_produto (id_log, nm_acao, id_produto, id_categoria_produto, id_tipo_produto, nm_produto, ds_produto, nm_usuario, dt_log)
         SELECT
             tbl_log_produto_seq.NEXTVAL,
             'DELETE',
             :old.id_produto,
             :old.id_categoria_produto,
-            :old.id_tipo_produto,
-            :old.id_graduacao_produto,
+            :old.id_tipo_produto,           
             :old.nm_produto,
             :old.ds_produto,
             :old.nm_usuario_ultima_alteracao,
@@ -124,14 +123,13 @@ CREATE OR REPLACE TRIGGER tbl_produto_trg
     END IF;
     
     IF INSERTING THEN 
-        INSERT INTO tbl_log_produto (id_log, nm_acao, id_produto, id_categoria_produto, id_tipo_produto, id_graduacao_produto, nm_produto, ds_produto, nm_usuario, dt_log)
+        INSERT INTO tbl_log_produto (id_log, nm_acao, id_produto, id_categoria_produto, id_tipo_produto, nm_produto, ds_produto, nm_usuario, dt_log)
         SELECT
             tbl_log_produto_seq.NEXTVAL,
             'INSERT',
             :new.id_produto,
             :new.id_categoria_produto,
-            :new.id_tipo_produto,
-            :new.id_graduacao_produto,
+            :new.id_tipo_produto,           
             :new.nm_produto,
             :new.ds_produto,
             :new.nm_usuario_ultima_alteracao,
@@ -140,14 +138,13 @@ CREATE OR REPLACE TRIGGER tbl_produto_trg
     END IF;
     
     IF UPDATING THEN
-        INSERT INTO tbl_log_produto (id_log, nm_acao, id_produto, id_categoria_produto, id_tipo_produto, id_graduacao_produto, nm_produto, ds_produto, nm_usuario, dt_log)
+        INSERT INTO tbl_log_produto (id_log, nm_acao, id_produto, id_categoria_produto, id_tipo_produto, nm_produto, ds_produto, nm_usuario, dt_log)
         SELECT
             tbl_log_produto_seq.NEXTVAL,
             'UPDATE',
             :new.id_produto,
             :new.id_categoria_produto,
-            :new.id_tipo_produto,
-            :new.id_graduacao_produto,
+            :new.id_tipo_produto,           
             :new.nm_produto,
             :new.ds_produto,
             :new.nm_usuario_ultima_alteracao,

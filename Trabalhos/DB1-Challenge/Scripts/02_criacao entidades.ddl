@@ -1,5 +1,5 @@
--- Gerado por Oracle SQL Developer Data Modeler 21.4.2.059.0838
---   em:        2022-06-08 20:22:58 BRT
+-- Gerado por Oracle SQL Developer Data Modeler 21.2.0.183.1957
+--   em:        2022-06-09 17:01:03 BRT
 --   site:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
@@ -35,17 +35,15 @@ CREATE TABLE tbl_log_graduacao_produto (
     dt_log       TIMESTAMP NOT NULL
 );
 
---  ERROR: Column TBL_LOG_GRADUACAO_PRODUTO.NM_ACAO check constraint name length exceeds maximum allowed length(30) 
-
 ALTER TABLE tbl_log_graduacao_produto
-    ADD CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
+    ADD CONSTRAINT tb_log_gr_prd_nm_acao CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
 
 ALTER TABLE tbl_log_graduacao_produto ADD CONSTRAINT tbl_log_graduacao_produto_pk PRIMARY KEY ( id_log );
 
 CREATE TABLE tbl_log_preco_produto (
     id_log           INTEGER NOT NULL,
     nm_acao          NVARCHAR2(6) NOT NULL,
-    id_preco_produto INTEGER NOT NULL,
+    id_preco_produto INTEGER,
     id_produto       INTEGER NOT NULL,
     id_graduacao     INTEGER NOT NULL,
     vl_quantidade    NUMBER(8, 3) NOT NULL,
@@ -54,10 +52,8 @@ CREATE TABLE tbl_log_preco_produto (
     dt_log           TIMESTAMP NOT NULL
 );
 
---  ERROR: Column TBL_LOG_PRECO_PRODUTO.NM_ACAO check constraint name length exceeds maximum allowed length(30) 
-
 ALTER TABLE tbl_log_preco_produto
-    ADD CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
+    ADD CONSTRAINT tb_log_prc_prd_nm_acao CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
 
 ALTER TABLE tbl_log_preco_produto ADD CONSTRAINT tbl_log_preco_produto_pk PRIMARY KEY ( id_log );
 
@@ -67,17 +63,14 @@ CREATE TABLE tbl_log_produto (
     id_produto           INTEGER NOT NULL,
     id_categoria_produto INTEGER NOT NULL,
     id_tipo_produto      INTEGER NOT NULL,
-    id_graduacao_produto INTEGER NOT NULL,
     nm_produto           VARCHAR2(250 CHAR) NOT NULL,
     ds_produto           NVARCHAR2(800),
     nm_usuario           NVARCHAR2(80) NOT NULL,
     dt_log               TIMESTAMP NOT NULL
 );
 
---  ERROR: Column TBL_LOG_PRODUTO.NM_ACAO check constraint name length exceeds maximum allowed length(30) 
-
 ALTER TABLE tbl_log_produto
-    ADD CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
+    ADD CONSTRAINT tb_log_prd_nm_acao CHECK ( nm_acao IN ( 'DELETE', 'INSERT', 'UPDATE' ) );
 
 ALTER TABLE tbl_log_produto ADD CONSTRAINT tbl_log_alteracao_pk PRIMARY KEY ( id_log );
 
@@ -102,7 +95,6 @@ CREATE TABLE tbl_produto (
     id_produto                  INTEGER NOT NULL,
     id_categoria_produto        INTEGER NOT NULL,
     id_tipo_produto             INTEGER NOT NULL,
-    id_graduacao_produto        INTEGER NOT NULL,
     nm_produto                  VARCHAR2(250 CHAR) NOT NULL,
     ds_produto                  VARCHAR2(800 CHAR),
     nm_usuario_ultima_alteracao NVARCHAR2(80) NOT NULL,
@@ -125,31 +117,26 @@ CREATE TABLE tbl_tipo_produto (
 
 ALTER TABLE tbl_tipo_produto ADD CONSTRAINT tbl_tipo_produto_pk PRIMARY KEY ( id_tipo );
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE tbl_graduacao_produto
-    ADD CONSTRAINT tbl_graduacao_produto_tbl_produto_fk FOREIGN KEY ( id_produto )
-        REFERENCES tbl_produto ( id_produto );
+ALTER TABLE tbl_produto
+    ADD CONSTRAINT tbl_categoria_produto_fk FOREIGN KEY ( id_categoria_produto )
+        REFERENCES tbl_categoria_produto ( id_categoria );
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE tbl_graduacao_produto
-    ADD CONSTRAINT tbl_graduacao_produto_tbl_produto_graduacao_fk FOREIGN KEY ( id_graduacao )
-        REFERENCES tbl_produto_graduacao ( id_graduacao );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE tbl_preco_produto
-    ADD CONSTRAINT tbl_preco_produto_tbl_graduacao_produto_fk FOREIGN KEY ( id_graduacao,
-                                                                            id_produto )
+    ADD CONSTRAINT tbl_graduacao_produto_fk FOREIGN KEY ( id_graduacao,
+                                                          id_produto )
         REFERENCES tbl_graduacao_produto ( id_graduacao,
                                            id_produto );
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE tbl_produto
-    ADD CONSTRAINT tbl_produto_tbl_categoria_produto_fk FOREIGN KEY ( id_categoria_produto )
-        REFERENCES tbl_categoria_produto ( id_categoria );
+ALTER TABLE tbl_graduacao_produto
+    ADD CONSTRAINT tbl_produto_fk FOREIGN KEY ( id_produto )
+        REFERENCES tbl_produto ( id_produto );
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
+ALTER TABLE tbl_graduacao_produto
+    ADD CONSTRAINT tbl_produto_graduacao_fk FOREIGN KEY ( id_graduacao )
+        REFERENCES tbl_produto_graduacao ( id_graduacao );
+
 ALTER TABLE tbl_produto
-    ADD CONSTRAINT tbl_produto_tbl_tipo_produto_fk FOREIGN KEY ( id_tipo_produto )
+    ADD CONSTRAINT tbl_tipo_produto_fk FOREIGN KEY ( id_tipo_produto )
         REFERENCES tbl_tipo_produto ( id_tipo );
 
 
@@ -194,5 +181,5 @@ ALTER TABLE tbl_produto
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   8
+-- ERRORS                                   0
 -- WARNINGS                                 0
