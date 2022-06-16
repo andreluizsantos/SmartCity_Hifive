@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="HT_USER" directorySegmentName="seg_0" id="DE673214-95E1-8940-C6F5-F1EA0D6A0FC5">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:14 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<schemaObject>331EEB9F-020E-EEAA-0ABD-A839CD46477F</schemaObject>
+</UserOraclev10g>

@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="498E3EAB-C3C6-6B94-129A-27A3A26259F2" schemaObject="331EEB9F-020E-EEAA-0ABD-A839CD46477F" name="TBL_USUARIO_OFERTA_DISPONIBILIDADE">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>ED01FD55-F970-60A3-4B8F-C34352B8BE0B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DISPONIBILIDADE" id="131A6207-A733-1BE1-5A29-29A542E1CAC5">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>3DDEDA28-5C1C-B627-E4A7-BDE252F2ADD5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_ATUALIZACAO" id="3CE0DAB5-2E66-F620-68CF-CC9458EB78F3">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>534D54C8-3E8E-30E2-BEA9-F461572E04E2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>C03E78FC-C384-0A35-CA35-31191AEA9868</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_CRIACAO" id="CC4DEE59-675A-2DF2-866A-C913EA92277B">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>0D4750F8-A78B-3A8D-198F-4B1C86915D9D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>C03E78FC-C384-0A35-CA35-31191AEA9868</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_DISPONIBILIDADE" id="20407D8E-C14A-CBE6-EB18-D8C495AC44F6">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>7AC2DAEA-0B47-D499-12D9-21C81142009C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>C03E78FC-C384-0A35-CA35-31191AEA9868</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_OFERTA" id="E0700981-D9A2-B575-8191-1B8C07998293">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>370C3EA0-5758-024D-6718-98C10DC4071C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98920454-7630-1F7B-7850-3710CC8DCE92" referredColumn="BD3CD4E3-CE11-59FE-0FEB-07862A8F5844"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95FE36C1-CD68-20AF-B4A5-20FE0175930D" name="TBL_USUARIO_OFERTA_DISPON_PK">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>CFA88EB3-8699-C943-3386-973B5F586D52</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="131A6207-A733-1BE1-5A29-29A542E1CAC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1429D83-A958-2B7E-CE09-AAA7A6ED7EA3" name="FK8DKIIQVPIQJOLBHHBVL2L68S8">
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0700981-D9A2-B575-8191-1B8C07998293"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

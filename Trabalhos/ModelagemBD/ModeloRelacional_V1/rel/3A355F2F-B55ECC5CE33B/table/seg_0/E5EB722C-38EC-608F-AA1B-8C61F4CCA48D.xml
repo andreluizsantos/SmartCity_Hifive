@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5EB722C-38EC-608F-AA1B-8C61F4CCA48D" schemaObject="331EEB9F-020E-EEAA-0ABD-A839CD46477F" name="TBL_USUARIO_COMPRA_OFERTA">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>986D5A74-643B-CBF7-0027-7F5B5A706319</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COMPRA" id="2A18734F-2BD8-3654-7DEE-1F320E919BE2">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>682827C1-2853-E82C-45C6-9D79969D41E9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_ATUALIZACAO" id="6D1625D0-88F6-3D1D-2576-52E07FF109B5">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>71AA551B-C482-4F85-00A5-702B0EEEE5B0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>C03E78FC-C384-0A35-CA35-31191AEA9868</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_CRIACAO" id="202EDF28-D898-0132-F6C5-61D2644F0528">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>6FF46D7B-C125-F9D4-CD2E-33D8BA131739</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>C03E78FC-C384-0A35-CA35-31191AEA9868</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DISPONIBILIDADE" id="7D3A98C3-1E4A-6F6F-8CE2-474C655271BE">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>57C99B27-6FF0-F734-46AC-ABA3F66B2D48</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C0F4697-04AB-417E-5B2D-ADB1F2F01910" referredColumn="131A6207-A733-1BE1-5A29-29A542E1CAC5"/>
+</associations>
+</Column>
+<Column name="ID_USUARIO" id="384A402C-930A-B73D-A379-E4940CCD5F78">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>E8CAED3E-C16F-0564-0B13-9DECA86FD655</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC815D90-60B3-C6CB-D09F-7D04D6B1C87A" referredColumn="E33560AD-82D5-244F-4AB5-AF0BFD537DC3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D5B8D7A-1C39-045D-227C-C16F9220F3D5" name="TBL_USUARIO_COMPRA_OFERTA_PK">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>6682DA2C-A882-EAA6-1A98-75D730FF3754</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A18734F-2BD8-3654-7DEE-1F320E919BE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11DE1CA3-5416-3A76-92EC-505C5FAD0529" name="FKC4ITBEN4NH5S1J4OFR2HEKAEY">
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D3A98C3-1E4A-6F6F-8CE2-474C655271BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1684D8CA-655D-77B4-5DAC-FB0A87360665" name="FKRMYHX51WRAF7AOK9IXOKQN2C">
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="384A402C-930A-B73D-A379-E4940CCD5F78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

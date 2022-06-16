@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8449958B-382B-8ACA-D4FB-40FC8F51CD5A" schemaObject="331EEB9F-020E-EEAA-0ABD-A839CD46477F" name="TBL_USUARIO_PONTOS_HISTORICO">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>37BEB9D2-43CB-0391-25C9-6465F5FF765C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_POTOS_HISTORICO" id="A339D6F2-B7F5-9DD1-5558-A818913D3C0E">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>BADF2D33-AAF8-28FF-A73F-FEF6EC2D6FE6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_ATUALIZACAO" id="4E388601-B8BB-B3B5-A007-FBD20E46DB6B">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>B558FB31-EE37-28B6-10EB-3D49BB46DA62</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>C03E78FC-C384-0A35-CA35-31191AEA9868</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_CRIACAO" id="4FB80D6C-C26F-E093-6934-8C9BBF68F054">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>8A9E423C-52C8-B99F-F4B1-654FA4A930F3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>C03E78FC-C384-0A35-CA35-31191AEA9868</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MOVIMENTACAO" id="FDDCD11B-FEFB-A685-8A1F-1195D73700D9">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>1B34C61B-4196-7877-05E3-F23072278DE9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>55CC0C16-2ED1-2BBA-459C-1BF137BC75F8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_PONTOS" id="6B42818D-7698-A952-BC8C-126012981E07">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>90CCAFF7-C072-8F04-7107-A795BBBE2675</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>800D55D1-F2BC-DEB7-21F9-EF1DE33AB201</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MOVIMENTACAO_TIPO" id="2BEE592C-0EEC-FAA7-14ED-C58BF542AF2A">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>C2B7CED3-F04D-3016-42F3-EC297275CD59</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="718DAB57-8253-3615-B162-724B9A8794EE" referredColumn="B0B68ADD-BF0E-43E1-2175-F83FB59BBDC5"/>
+</associations>
+</Column>
+<Column name="ID_USUARIO" id="D94D0FF5-B7E4-0C59-451F-344E2FFC2EFD">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>497CC558-38F0-C18C-6E5A-A3CFA0C05297</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F40B20F3-B215-309B-1CC6-28CC669351ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20D96319-3F93-41D5-D963-AE512B4997C0" referredColumn="E33560AD-82D5-244F-4AB5-AF0BFD537DC3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="890C1FAD-F437-37BF-11E5-DE58CDA46E42" name="TBL_USUARIO_PONTOS_HISTOR_PK">
+<sourceDDLFile>orm.ddl</sourceDDLFile>
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<importedID>F20C826A-769C-394D-B763-B280B0DB02C1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A339D6F2-B7F5-9DD1-5558-A818913D3C0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F4B3B79-EF4A-6038-5C8B-DFCE1CF98784" name="FK5KOBMCK209LT94680W7UQ6OM2">
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BEE592C-0EEC-FAA7-14ED-C58BF542AF2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AACA6AA9-D366-A628-54CA-31357096B003" name="FKEDVVBIVJCCNO2D4HF7D9QJ26W">
+<createdBy>andre</createdBy>
+<createdTime>2022-03-13 16:07:20 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_V1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D94D0FF5-B7E4-0C59-451F-344E2FFC2EFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
