@@ -17,6 +17,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1115B20E-1AB9-D289-FE31-FE7EABDD90FF" referredColumn="2A8CEAD6-1416-0559-ED61-D3786139765B"/>
+</associations>
 </Column>
 <Column name="SK_USUARIO_VENDEDOR" id="BED309D1-8411-3B61-5A58-EBB0517ED489">
 <createdBy>andre</createdBy>
@@ -27,6 +30,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAF660CA-FB81-D96E-4F43-32E4835B02AF" referredColumn="F861BA78-8E16-9960-21C2-D073606844F1"/>
+</associations>
 </Column>
 <Column name="SK_DATA" id="6F6CDA6F-E808-3117-F5DB-8ACA7B00A8B9">
 <createdBy>andre</createdBy>
@@ -37,6 +43,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EDF5F06-F9C3-95BD-2794-C9C134A4C869" referredColumn="5B4A6330-C895-F71E-7A60-929F14375073"/>
+</associations>
 </Column>
 <Column name="SK_OFERTA" id="89D5A20E-0325-8EFB-C567-530408AD2D77">
 <createdBy>andre</createdBy>
@@ -47,6 +56,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C4C44EE-17D0-11C7-3625-F567409357B7" referredColumn="977004F2-0B35-8BFC-3F8E-CC4BCBA45695"/>
+</associations>
 </Column>
 <Column name="DD_CATEGORIA" id="C9489120-1481-F366-0782-70FD062C1C53">
 <createdBy>andre</createdBy>
@@ -96,6 +108,46 @@
 <colUsage columnID="BED309D1-8411-3B61-5A58-EBB0517ED489"/>
 <colUsage columnID="6F6CDA6F-E808-3117-F5DB-8ACA7B00A8B9"/>
 <colUsage columnID="89D5A20E-0325-8EFB-C567-530408AD2D77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75B6A708-EAC9-DD1A-70B2-BD994F29F9CC" name="DIM_USUARIO_COMPRADOR_FK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:18:00 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AAC524A-6E87-51E5-EBFF-EF94788DEE15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82D15303-E6B9-9001-DF8B-C6BF499DAFA2" name="DIM_USUARIO_VENDEDOR_FK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:19:17 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BED309D1-8411-3B61-5A58-EBB0517ED489"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBEBFF3C-E312-ACD4-5C58-159AAFAE9021" name="DIM_OFERTA_FK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:38:21 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89D5A20E-0325-8EFB-C567-530408AD2D77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3A1AE29-7D98-4ED7-20D2-2D0C27699B85" name="FATO_VENDA_OFERTAS_DIM_DATA_FK">
+<createdBy>andre</createdBy>
+<createdTime>2022-06-16 18:38:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F6CDA6F-E808-3117-F5DB-8ACA7B00A8B9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
