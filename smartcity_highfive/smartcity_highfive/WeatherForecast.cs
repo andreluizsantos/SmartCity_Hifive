@@ -1,6 +1,6 @@
 using System;
 
-namespace smartcity_highfive
+namespace HighFive.SmartCity.API
 {
     public class WeatherForecast
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace smartcity_highfive.Controllers
+namespace HighFive.SmartCity.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

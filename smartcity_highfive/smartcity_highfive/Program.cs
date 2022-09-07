@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace smartcity_highfive
+namespace HighFive.SmartCity.API
 {
     public class Program
     {

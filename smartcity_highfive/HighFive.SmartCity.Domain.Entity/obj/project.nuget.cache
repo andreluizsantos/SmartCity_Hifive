@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S1ZkSDbH22OAsL8WCds+IGXNgivBy+73CW6371bdGtmLVpEeWBJJ8brZeWLmLcMED1UjNsX9vDejJaGYhE4pww==",
+  "dgSpecHash": "oAWWJ5mCQq/VOPU03iCWPCvonf9drfcizDN32KimjIzFjv4bbsqGjq7knDdLnKMEfAF+TMSodKxIO0On5HvUjA==",
   "success": true,
-  "projectFilePath": "C:\\git\\smartcity_highfive\\HighFive.SmartCity.Domain.Entity\\HighFive.SmartCity.Domain.Entity.csproj",
+  "projectFilePath": "C:\\git\\smartcity_highfive\\HighFive.SmartCity.Domain.Entity\\HighFive.SmartCity.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lpess\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\lpess\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

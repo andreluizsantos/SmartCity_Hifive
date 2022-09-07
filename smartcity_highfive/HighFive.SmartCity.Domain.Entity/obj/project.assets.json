@@ -5708,9 +5708,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\smartcity_highfive\\HighFive.SmartCity.Domain.Entity\\HighFive.SmartCity.Domain.Entity.csproj",
-      "projectName": "HighFive.SmartCity.Domain.Entity",
-      "projectPath": "C:\\git\\smartcity_highfive\\HighFive.SmartCity.Domain.Entity\\HighFive.SmartCity.Domain.Entity.csproj",
+      "projectUniqueName": "C:\\git\\smartcity_highfive\\HighFive.SmartCity.Domain.Entity\\HighFive.SmartCity.Domain.csproj",
+      "projectName": "HighFive.SmartCity.Domain",
+      "projectPath": "C:\\git\\smartcity_highfive\\HighFive.SmartCity.Domain.Entity\\HighFive.SmartCity.Domain.csproj",
       "packagesPath": "C:\\Users\\lpess\\.nuget\\packages\\",
       "outputPath": "C:\\git\\smartcity_highfive\\HighFive.SmartCity.Domain.Entity\\obj\\",
       "projectStyle": "PackageReference",

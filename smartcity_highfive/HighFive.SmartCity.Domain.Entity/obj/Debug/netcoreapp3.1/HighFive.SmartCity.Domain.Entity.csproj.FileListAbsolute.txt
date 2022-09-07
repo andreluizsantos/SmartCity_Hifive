@@ -1,9 +1,0 @@
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\bin\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.deps.json
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\bin\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.dll
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\bin\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.pdb
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\obj\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.AssemblyInfoInputs.cache
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\obj\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.AssemblyInfo.cs
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\obj\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.csproj.CoreCompileInputs.cache
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\obj\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.dll
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\obj\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.pdb
-C:\git\smartcity_highfive\HighFive.SmartCity.Domain.Entity\obj\Debug\netcoreapp3.1\HighFive.SmartCity.Domain.Entity.csproj.AssemblyReference.cache
