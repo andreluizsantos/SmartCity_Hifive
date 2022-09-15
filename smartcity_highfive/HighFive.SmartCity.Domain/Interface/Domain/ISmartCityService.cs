@@ -1,4 +1,5 @@
 ﻿using HighFive.SmartCity.Domain.Entity;
+using System.Collections.Generic;
 
 namespace HighFive.SmartCity.Domain.Interface.Domain
 {
@@ -9,6 +10,6 @@ namespace HighFive.SmartCity.Domain.Interface.Domain
 
         Usuario Login(string usuario, string senha);
         Usuario CadastraUsuario(Usuario usuario);
-
+        List<UsuarioOferta> BuscarUsuarioOferta(string nome, int minPontos, int maxPontos, int minCargaHoraria, int maxCargaHoraria);
     }
 }

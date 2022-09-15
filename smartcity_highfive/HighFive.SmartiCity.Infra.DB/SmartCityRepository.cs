@@ -48,5 +48,17 @@ namespace HighFive.SmartCity.Infra.DB
 
             return usuario;
         }
+
+        
+
+        public List<UsuarioOferta> BuscarUsuarioOferta(string nome, int minPontos, int maxPontos, int minCargaHoraria, int maxCargaHoraria)
+        {
+            return _context.UsuarioOferta.Where(x => x.Oferta.Contains(nome??string.Empty)
+                                            && x.Pontos >= minPontos
+                                            && x.Pontos <= maxPontos
+                                            && x.HorasDuracao >= minCargaHoraria
+                                            && x.HorasDuracao <= maxCargaHoraria).ToList();
+
+        }
     }
 }

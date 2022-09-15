@@ -1,4 +1,5 @@
 ﻿using HighFive.SmartCity.Domain.Entity;
+using System.Collections.Generic;
 
 namespace HighFive.SmartCity.Domain.Interface.Infra
 {
@@ -14,5 +15,6 @@ namespace HighFive.SmartCity.Domain.Interface.Infra
 
         Usuario AddUsuario(Usuario usuario);
 
+        List<UsuarioOferta> BuscarUsuarioOferta(string nome, int minPontos, int maxPontos, int minCargaHoraria, int maxCargaHoraria);
     }
 }

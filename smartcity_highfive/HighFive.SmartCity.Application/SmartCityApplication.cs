@@ -3,6 +3,7 @@ using HighFive.SmartCity.Domain.Interface.Application;
 using HighFive.SmartCity.Domain.Interface.Domain;
 using HighFive.SmartCity.Domain.Service;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace HighFive.SmartCity.Application
@@ -31,12 +32,15 @@ namespace HighFive.SmartCity.Application
             return _service.CadastraUsuario(usuario);
         }
 
-        public async Task<Usuario> Login(Usuario usuario)
+        public async Task<Usuario> Login(string login, string senha)
         {
-            return _service.Login(usuario.Login, usuario.Senha);
+            return _service.Login(login, senha);
         }
 
-
+        public async Task<List<UsuarioOferta>> BuscarUsuarioOferta(string nome, int minPontos, int maxPontos, int minCargaHoraria, int maxCargaHoraria)
+        {
+            return _service.BuscarUsuarioOferta(nome, minPontos, maxPontos, minCargaHoraria, maxCargaHoraria);
+        }
 
         public void Dispose()
         {

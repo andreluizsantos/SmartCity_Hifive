@@ -21,13 +21,21 @@ namespace HighFive.SmartCity.API.Controllers
             _application = application;
         }
 
-        [HttpPost("~/Usuario/CadastrarUsuario")]
+        [HttpGet("~/Usuario/CadastrarUsuario")]
         [ProducesResponseType(200, Type = typeof(bool))]
-        public async Task<IActionResult> CadastraUsuario(Usuario request)
+        public async Task<IActionResult> CadastraUsuario(string login, string senha, string nome, string bio)
         {
             try
             {
-                var result = await _application.AddUsuario(request);
+                var usuario = new Usuario
+                {
+                    Nome = nome,
+                    Senha = senha,
+                    Login = login,
+                    Biografia = bio
+                };
+
+                var result = await _application.AddUsuario(usuario);
 
                 return Ok(result);
 
@@ -38,13 +46,13 @@ namespace HighFive.SmartCity.API.Controllers
             }
         }
 
-        [HttpPost("~/Usuario/Login")]
+        [HttpGet("~/Usuario/Login")]
         [ProducesResponseType(200, Type = typeof(bool))]
-        public async Task<IActionResult> Login(Usuario request)
+        public async Task<IActionResult> Login(string login, string senha)
         {
             try
             {
-                var result = await _application.Login(request);
+                var result = await _application.Login(login, senha);
 
                 return Ok(result);
 

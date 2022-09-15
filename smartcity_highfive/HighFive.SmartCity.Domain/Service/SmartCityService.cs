@@ -1,6 +1,7 @@
 ﻿using HighFive.SmartCity.Domain.Entity;
 using HighFive.SmartCity.Domain.Interface.Domain;
 using HighFive.SmartCity.Domain.Interface.Infra;
+using System.Collections.Generic;
 
 namespace HighFive.SmartCity.Domain.Service
 {
@@ -41,6 +42,10 @@ namespace HighFive.SmartCity.Domain.Service
             return _db.AddUsuario(usuario);
         }
 
+        public List<UsuarioOferta> BuscarUsuarioOferta(string nome, int minPontos, int maxPontos, int minCargaHoraria, int maxCargaHoraria)
+        {
+            return _db.BuscarUsuarioOferta(nome, minPontos, maxPontos, minCargaHoraria, maxCargaHoraria);
+        }
         #endregion
     }
 }

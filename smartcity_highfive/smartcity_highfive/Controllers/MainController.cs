@@ -21,34 +21,6 @@ namespace HighFive.SmartCity.API.Controllers
             _application = application;
         }
 
-        [HttpGet("~/GetQualquerCoisa")]
-        public async Task<string> GetQualquerCoisa()
-        {
-            var rng = new Random();
-
-            var result = await _application.GetTeste();
-
-            return result;
-        }
-
-        [HttpGet("~/GetQualquerCoisa2")]
-        public async Task<string> GetQualquerCoisa2()
-        {
-            var rng = new Random();
-
-            var result = await _application.GetTeste();
-
-            return result;
-        }
-        
-        [HttpGet("~/CadastrarUsuario")]
-        [ProducesResponseType(200, Type=typeof(bool))]
-        public async Task<IActionResult> CadastrarUsuario(string request)
-        {
-
-            return Ok(false);
-        }
-
         [HttpGet("~/CadastrarCategoria")]
         [ProducesResponseType(200, Type = typeof(bool))]
         public async Task<IActionResult> CadastraCategoria(string request)

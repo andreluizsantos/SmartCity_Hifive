@@ -48,7 +48,7 @@ namespace HighFive.SmartCity.API
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
