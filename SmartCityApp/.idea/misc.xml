@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/layout/activity_bucar_usuario_oferta.xml" value="0.29375" />
         <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/layout/activity_cadastro_usuario.xml" value="0.25" />
         <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/layout/activity_login.xml" value="0.30978260869565216" />
         <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/layout/activity_login2.xml" value="0.240625" />
         <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/layout/activity_principal.xml" value="0.25" />
+        <entry key="..\:/git/smarticity_highfive_1/SmartCityApp/app/src/main/res/layout/item_oferta.xml" value="0.33" />
       </map>
     </option>
   </component>

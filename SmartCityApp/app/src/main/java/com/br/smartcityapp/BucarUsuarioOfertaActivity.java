@@ -1,16 +1,24 @@
 package com.br.smartcityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.br.smartcityapp.Helpers.ApiHelper;
+import com.br.smartcityapp.adapters.UsuarioOfertaAdapter;
 import com.br.smartcityapp.entity.Usuario;
+import com.br.smartcityapp.entity.UsuarioOferta;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class BucarUsuarioOfertaActivity extends AppCompatActivity {
 
@@ -18,6 +26,9 @@ public class BucarUsuarioOfertaActivity extends AppCompatActivity {
     private SeekBar sbPontos;
     private TextView tvCargaHoraria;
     private TextView tvPontos;
+
+    private RecyclerView rvOfertas;
+    private RecyclerView.Adapter adpOferta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +48,10 @@ public class BucarUsuarioOfertaActivity extends AppCompatActivity {
         tvPontos.setText("Pontos (" + sbPontos.getProgress() + "/" + sbPontos.getMax() + ")");
 
         setTitle("Buscar Oferta");
+
+        this.rvOfertas = (RecyclerView) findViewById(R.id.rvOfertas);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
+        this.rvOfertas.setLayoutManager(mLayoutManager);
 
         sbCargaHoraria.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
@@ -76,6 +91,7 @@ public class BucarUsuarioOfertaActivity extends AppCompatActivity {
     public void btPesquisar_onClick(View v) {
         try
         {
+
             SeekBar sbCargaHoraria = findViewById(R.id.sbCargaHoraria);
             SeekBar sbPontos = findViewById(R.id.sbPontos);
             TextView tNomeOferta = findViewById(R.id.tNomeOferta);;
@@ -90,15 +106,25 @@ public class BucarUsuarioOfertaActivity extends AppCompatActivity {
 
             String retorno = ApiHelper.getApiData(uri, parametros);
 
-            TextView tRetorno = findViewById(R.id.textView6);
-            tRetorno.setText(retorno);
-            //Gson parser = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
-            //Usuario usu = parser.fromJson(retorno,Usuario.class);
+            Gson gson =  new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
+            UsuarioOferta[] arr = gson.fromJson(retorno, UsuarioOferta[].class);
+
+            ArrayList<UsuarioOferta> list = new ArrayList<>(Arrays.asList(arr));
+
+            adpOferta = new UsuarioOfertaAdapter(list);
+            this.rvOfertas.setAdapter(adpOferta);
+
         }
         catch (Exception ex)
         {
             ex.printStackTrace();
+            alert("Erro ao pesquisar");
         }
 
     }
+
+    private void alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
+    }
+
 }
